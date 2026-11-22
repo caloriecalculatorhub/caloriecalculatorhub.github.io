@@ -1,0 +1,87 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BMR Calculator | Calorie Calculator</title>
+<meta name="description" content="Calculate your basal metabolic rate — the calories your body burns at complete rest.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<style>
+body{font-family:Verdana,Geneva,sans-serif;color:#1f2937;background:#f6fbf3}
+a{color:#15803d}header{background:#fff;border-bottom:3px solid #16a34a;padding:14px 0}
+.header-in{max-width:1020px;margin:0 auto;padding:0 20px;display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between}
+.logo{font-size:clamp(22px,5vw,26px);font-weight:800;color:#14532d;text-decoration:none}
+.logo span{color:#16a34a}
+nav a{color:#14532d;margin:0 8px;font-weight:700;font-size:15px;text-decoration:none}
+nav a:hover{color:#16a34a;text-decoration:underline}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:28px;max-width:1020px;margin:0 auto;padding:clamp(24px,5vw,44px) 20px;align-items:center}
+.hero h1{font-size:clamp(26px,5vw,38px);line-height:1.2;margin:0 0 12px;color:#14532d}
+.hero p{font-size:clamp(15px,3vw,17px);color:#4b5563;margin:0 0 16px}
+.calc{background:#fff;max-width:560px;padding:clamp(18px,4vw,26px);border-radius:14px;box-shadow:0 10px 28px rgba(20,83,45,.14);border-top:5px solid #16a34a}
+.calc h2{font-size:20px;margin:0 0 14px;color:#14532d}
+.field{margin-bottom:14px}.field label{display:block;font-size:14px;font-weight:700;margin-bottom:5px;color:#374151}
+.btn{background:#16a34a;color:#fff}.btn:hover{background:#15803d}
+.result{background:#f0fdf4;border:1px solid #86efac}
+.card{background:#fff;border:1px solid #d1fae5;border-radius:12px;padding:22px;margin-bottom:20px}
+.acard{background:#fff;border:1px solid #d1fae5}
+.acard h3 a{color:#14532d;text-decoration:none}.acard p{color:#6b7280}
+.toolgrid a{background:#fff;border:1px solid #d1fae5;color:#14532d}
+.toolgrid a:hover{border-color:#16a34a;background:#f0fdf4}
+.tip{background:#f0fdf4;border-left:4px solid #16a34a}
+h2{color:#14532d}footer{color:#6b7280;font-size:14px;margin-top:30px;padding:20px;text-align:center}
+@media(max-width:640px){.hero{grid-template-columns:1fr}}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;line-height:1.65;font-size:16px}
+img{max-width:100%;height:auto}
+input,select,textarea,button{font-family:inherit;font-size:16px}
+input,select{width:100%;min-height:44px;padding:11px 12px;border:1px solid #cbd5e1;border-radius:8px}
+button,.btn{min-height:44px;padding:12px 22px;border:0;border-radius:8px;font-size:16px;font-weight:700;cursor:pointer;text-decoration:none;display:inline-block;text-align:center}
+.wrap{max-width:1020px;margin:0 auto;padding:0 20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
+.acard{overflow:hidden;border-radius:12px}
+.acard img{width:100%;height:160px;object-fit:cover;display:block}
+.acard div{padding:14px}
+.acard h3{margin:0 0 6px;font-size:16px;line-height:1.35}
+.acard p{margin:0;font-size:14px}
+.toolgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+.toolgrid a{padding:18px;border-radius:12px;text-decoration:none;display:block;font-weight:700}
+.result{padding:16px;border-radius:10px;margin-top:16px}
+.result .big{font-size:clamp(22px,5vw,28px);font-weight:800}
+.tip{padding:14px 16px;border-radius:10px;margin:18px 0}
+.faq h3{font-size:16px;margin:18px 0 4px}
+article img.heroimg{width:100%;max-height:380px;object-fit:cover;border-radius:12px;display:block}
+@media(max-width:640px){
+  .wrap{padding:0 14px}
+  .grid,.toolgrid{grid-template-columns:1fr}
+  .acard img{height:180px}
+  nav a{margin:0 6px}
+}
+@media(max-width:480px){
+  body{font-size:16px}
+  .wrap{padding:0 12px}
+  h1{font-size:26px !important}
+  .btn,button{width:100%}
+  .acard img{height:170px}
+}
+</style></head>
+<body><header><div class="header-in"><a class="logo" href="../index.html">Calorie Calculator</a><nav><a href="../index.html">Home</a><a href="../tools/calorie-calculator.html">Calculator</a><a href="../about.html">About</a><a href="../contact.html">Contact</a></nav></div></header><main class="wrap"><div class="card" style="margin-top:20px"><h1>BMR Calculator</h1><p>Calculate your basal metabolic rate — the calories your body burns at complete rest.</p><div class="field"><label for="sex2">Sex</label><select id="sex2"><option value="male">Male</option><option value="female">Female</option></select></div>
+<div class="field"><label for="age2">Age (years)</label><input type="number" id="age2" value="30" min="10" max="100"></div>
+<div class="field"><label for="weight2">Weight (kg)</label><input type="number" id="weight2" value="70" min="25" max="300" step="0.1"></div>
+<div class="field"><label for="height2">Height (cm)</label><input type="number" id="height2" value="175" min="120" max="230"></div>
+<button class="btn" type="button" onclick="calcBmr()">Calculate My BMR</button>
+<div id="out2" class="result" style="display:none"></div>
+<script>
+function calcBmr(){
+  var sex=document.getElementById('sex2').value;
+  var age=parseFloat(document.getElementById('age2').value);
+  var w=parseFloat(document.getElementById('weight2').value);
+  var h=parseFloat(document.getElementById('height2').value);
+  var out=document.getElementById('out2');
+  if(isNaN(age)||isNaN(w)||isNaN(h)||age<10||age>100||w<25||w>300||h<120||h>230){
+    out.style.display='block';out.innerHTML='Please check your entries: age 10–100, weight 25–300 kg, height 120–230 cm.';return;}
+  var bmr = sex==='male' ? 10*w+6.25*h-5*age+5 : 10*w+6.25*h-5*age-161;
+  var r=Math.round;
+  out.style.display='block';
+  out.innerHTML='<p>Your basal metabolic rate (BMR) is</p><p class="big">'+r(bmr).toLocaleString()+' kcal/day</p>'
+   +'<p>That is the energy your body uses at complete rest, before any activity. Your total daily needs are higher: multiply BMR by an activity factor of 1.2 (sedentary) to 1.9 (extra active). For example, at a moderate activity factor of 1.55, your daily needs would be about <strong>'+r(bmr*1.55).toLocaleString()+' kcal/day</strong>.</p>';
+}
+</script><p style="font-size:14px;color:#666;margin-top:14px">Note: results are estimates based on standard formulas and the information you enter, and are not medical advice. Calorie needs vary with body composition, health conditions and medicines. If you are changing your diet to lose or gain weight, consider speaking to a doctor or a registered dietitian.</p></div><p><a href="../index.html">&larr; Back to home</a> | <a href="calorie-calculator.html">Main calculator</a></p></main><footer><p>Calorie Calculator — free online calculators and practical guides. <a href="../about.html">About</a> | <a href="../contact.html">Contact</a> | <a href="../privacy.html">Privacy Policy</a> | <a href="../disclaimer.html">Disclaimer</a></p><p>Results are estimates for general information only.</p></footer></body></html>
