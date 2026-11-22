@@ -1,0 +1,78 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to Use a Calorie Calculator | Calorie Calculator</title>
+<meta name="description" content="A step-by-step guide to getting an accurate daily calorie estimate from your age, weight, height and activity.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<style>
+body{font-family:Verdana,Geneva,sans-serif;color:#1f2937;background:#f6fbf3}
+a{color:#15803d}header{background:#fff;border-bottom:3px solid #16a34a;padding:14px 0}
+.header-in{max-width:1020px;margin:0 auto;padding:0 20px;display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between}
+.logo{font-size:clamp(22px,5vw,26px);font-weight:800;color:#14532d;text-decoration:none}
+.logo span{color:#16a34a}
+nav a{color:#14532d;margin:0 8px;font-weight:700;font-size:15px;text-decoration:none}
+nav a:hover{color:#16a34a;text-decoration:underline}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:28px;max-width:1020px;margin:0 auto;padding:clamp(24px,5vw,44px) 20px;align-items:center}
+.hero h1{font-size:clamp(26px,5vw,38px);line-height:1.2;margin:0 0 12px;color:#14532d}
+.hero p{font-size:clamp(15px,3vw,17px);color:#4b5563;margin:0 0 16px}
+.calc{background:#fff;max-width:560px;padding:clamp(18px,4vw,26px);border-radius:14px;box-shadow:0 10px 28px rgba(20,83,45,.14);border-top:5px solid #16a34a}
+.calc h2{font-size:20px;margin:0 0 14px;color:#14532d}
+.field{margin-bottom:14px}.field label{display:block;font-size:14px;font-weight:700;margin-bottom:5px;color:#374151}
+.btn{background:#16a34a;color:#fff}.btn:hover{background:#15803d}
+.result{background:#f0fdf4;border:1px solid #86efac}
+.card{background:#fff;border:1px solid #d1fae5;border-radius:12px;padding:22px;margin-bottom:20px}
+.acard{background:#fff;border:1px solid #d1fae5}
+.acard h3 a{color:#14532d;text-decoration:none}.acard p{color:#6b7280}
+.toolgrid a{background:#fff;border:1px solid #d1fae5;color:#14532d}
+.toolgrid a:hover{border-color:#16a34a;background:#f0fdf4}
+.tip{background:#f0fdf4;border-left:4px solid #16a34a}
+h2{color:#14532d}footer{color:#6b7280;font-size:14px;margin-top:30px;padding:20px;text-align:center}
+@media(max-width:640px){.hero{grid-template-columns:1fr}}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;line-height:1.65;font-size:16px}
+img{max-width:100%;height:auto}
+input,select,textarea,button{font-family:inherit;font-size:16px}
+input,select{width:100%;min-height:44px;padding:11px 12px;border:1px solid #cbd5e1;border-radius:8px}
+button,.btn{min-height:44px;padding:12px 22px;border:0;border-radius:8px;font-size:16px;font-weight:700;cursor:pointer;text-decoration:none;display:inline-block;text-align:center}
+.wrap{max-width:1020px;margin:0 auto;padding:0 20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
+.acard{overflow:hidden;border-radius:12px}
+.acard img{width:100%;height:160px;object-fit:cover;display:block}
+.acard div{padding:14px}
+.acard h3{margin:0 0 6px;font-size:16px;line-height:1.35}
+.acard p{margin:0;font-size:14px}
+.toolgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+.toolgrid a{padding:18px;border-radius:12px;text-decoration:none;display:block;font-weight:700}
+.result{padding:16px;border-radius:10px;margin-top:16px}
+.result .big{font-size:clamp(22px,5vw,28px);font-weight:800}
+.tip{padding:14px 16px;border-radius:10px;margin:18px 0}
+.faq h3{font-size:16px;margin:18px 0 4px}
+article img.heroimg{width:100%;max-height:380px;object-fit:cover;border-radius:12px;display:block}
+@media(max-width:640px){
+  .wrap{padding:0 14px}
+  .grid,.toolgrid{grid-template-columns:1fr}
+  .acard img{height:180px}
+  nav a{margin:0 6px}
+}
+@media(max-width:480px){
+  body{font-size:16px}
+  .wrap{padding:0 12px}
+  h1{font-size:26px !important}
+  .btn,button{width:100%}
+  .acard img{height:170px}
+}
+</style></head>
+<body><header><div class="header-in"><a class="logo" href="../index.html">Calorie Calculator</a><nav><a href="../index.html">Home</a><a href="../tools/calorie-calculator.html">Calculator</a><a href="../about.html">About</a><a href="../contact.html">Contact</a></nav></div></header><main class="wrap"><article class="card" style="margin-top:20px"><img class="heroimg" src="../images/how-to-use-calorie-calculator.jpg" alt="How to Use a Calorie Calculator">
+<h1>How to Use a Calorie Calculator</h1><p><em>A step-by-step guide to getting an accurate daily calorie estimate from your age, weight, height and activity.</em></p>
+<p>A calorie calculator answers a simple question: how many calories does your body use in a day? The answer comes from a standard formula that combines your age, sex, weight and height to estimate your resting metabolism, then multiplies it by an activity factor. The result is an estimate, not a measurement, but it is a good starting point for eating to maintain, lose or gain weight. This guide explains how to enter your numbers correctly and how to use the result.</p>
+<h2>Start with accurate measurements</h2><p>The formula is sensitive to weight and height, so small errors change the answer. Weigh yourself in the morning, after using the bathroom and before eating, wearing light clothing, and use the same scale each time. Measure your height standing straight against a wall, without shoes. If you are between sizes, round to the nearest whole number rather than guessing. A weight that is 5 kg out can shift the result by about 50 calories a day, which is small, but combined with a wrong activity level the error grows quickly.</p>
+<h2>Choose your activity level honestly</h2><p>The activity multiplier is where most people go wrong, because it is easy to overestimate. Sedentary means a desk job and little exercise. Lightly active means light exercise one to three days a week. Moderately active means moderate exercise three to five days a week. Very active means hard exercise six to seven days a week, and extra active means a physical job plus daily hard training. Most people who exercise three times a week and sit the rest of the day are lightly or moderately active, not very active. Choosing one level too high adds roughly 200 to 300 calories to the result.</p>
+<h2>Read the two numbers separately</h2><p>The calculator gives you a resting number, your BMR, and a total number, your daily needs. BMR is what your body burns at complete rest, just keeping you alive. Daily needs add the energy of everything you do: walking, working, exercising and digesting food. If you want to maintain your weight, eat around your daily needs. If you want to lose weight, eat below them; to gain weight, eat above them. The gap between the two numbers shows how much your activity actually contributes.</p>
+<h2>Turn the result into a daily target</h2><p>For weight loss, a deficit of about 500 calories a day leads to roughly 0.5 kg of loss per week, which is a widely recommended rate. So if your daily needs are 2,400 calories, a target of about 1,900 calories is a sensible starting point. For weight gain, add about 500 calories instead. Start with the target for two to three weeks, weigh yourself weekly under the same conditions, and compare the change with what you expected. If nothing changes, adjust by 100 to 200 calories and try again.</p>
+<h2>Recalculate as you change</h2><p>Your calorie needs fall as you lose weight, because a lighter body burns less energy, and they rise as you gain weight. That is why a target that worked in January may stop working by March. Recalculate every four to six weeks, or after every 5 kg of change, and update your activity level if your routine changes. A calculator is not a one-time answer; it is a tool you revisit as your body changes, and the habit of revisiting it is what keeps a plan working over months.</p>
+<h2>A worked example from start to finish</h2><p>Take a 35-year-old woman who weighs 68 kg, is 165 cm tall, and exercises moderately three to five days a week. Her BMR is 10 times 68, or 680, plus 6.25 times 165, or 1,031, minus 5 times 35, or 175, minus 161, which gives 1,375 calories. Multiply by the moderate activity factor of 1.55 and her daily needs are about 2,131 calories. To lose about 0.5 kg a week, she aims for about 1,630 calories a day. She follows the target for three weeks, weighing herself weekly, and loses 1.4 kg, close to the expected 1.5 kg, so the estimate was right. If she had lost nothing, she would lower the target by 150 calories and try again. The example shows the whole method: calculate, eat to the target, weigh, and adjust from the result.</p>
+<div class="tip"><strong>Tip:</strong> Be honest about activity: most people who exercise three times a week and sit the rest of the day are lightly or moderately active, not very active.</div>
+<h2>Frequently Asked Questions</h2><div class="faq"><h3>How accurate is a calorie calculator?</h3><p>It is an estimate, usually within about 10 percent for most people. Body composition, health conditions and medicines can shift the real number, so use it as a starting point and adjust from your results.</p><h3>What is the difference between BMR and daily calories?</h3><p>BMR is what you burn at complete rest. Daily calories add activity, so daily needs are always higher than BMR.</p><h3>How many calories should I eat to lose weight?</h3><p>About 500 calories below your daily needs, for roughly 0.5 kg of loss per week. Avoid very low intakes without medical advice.</p></div>
+<h2>Related Guides</h2><ul><li><a href="what-is-bmr.html">What Is BMR? Basal Metabolic Rate Explained</a></li><li><a href="tdee-explained.html">TDEE Explained: Total Daily Energy Expenditure</a></li><li><a href="calories-to-lose-weight.html">How Many Calories to Lose Weight</a></li></ul>
+<p><a href="../index.html">&larr; Back to home</a></p></article></main><footer><p>Calorie Calculator — free online calculators and practical guides. <a href="../about.html">About</a> | <a href="../contact.html">Contact</a> | <a href="../privacy.html">Privacy Policy</a> | <a href="../disclaimer.html">Disclaimer</a></p><p>Results are estimates for general information only.</p></footer></body></html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Counting Calories for Beginners | Calorie Calculator</title>
+<meta name="description" content="A simple, low-stress way to start tracking what you eat, without weighing everything or giving up after a week.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<style>
+body{font-family:Verdana,Geneva,sans-serif;color:#1f2937;background:#f6fbf3}
+a{color:#15803d}header{background:#fff;border-bottom:3px solid #16a34a;padding:14px 0}
+.header-in{max-width:1020px;margin:0 auto;padding:0 20px;display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between}
+.logo{font-size:clamp(22px,5vw,26px);font-weight:800;color:#14532d;text-decoration:none}
+.logo span{color:#16a34a}
+nav a{color:#14532d;margin:0 8px;font-weight:700;font-size:15px;text-decoration:none}
+nav a:hover{color:#16a34a;text-decoration:underline}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:28px;max-width:1020px;margin:0 auto;padding:clamp(24px,5vw,44px) 20px;align-items:center}
+.hero h1{font-size:clamp(26px,5vw,38px);line-height:1.2;margin:0 0 12px;color:#14532d}
+.hero p{font-size:clamp(15px,3vw,17px);color:#4b5563;margin:0 0 16px}
+.calc{background:#fff;max-width:560px;padding:clamp(18px,4vw,26px);border-radius:14px;box-shadow:0 10px 28px rgba(20,83,45,.14);border-top:5px solid #16a34a}
+.calc h2{font-size:20px;margin:0 0 14px;color:#14532d}
+.field{margin-bottom:14px}.field label{display:block;font-size:14px;font-weight:700;margin-bottom:5px;color:#374151}
+.btn{background:#16a34a;color:#fff}.btn:hover{background:#15803d}
+.result{background:#f0fdf4;border:1px solid #86efac}
+.card{background:#fff;border:1px solid #d1fae5;border-radius:12px;padding:22px;margin-bottom:20px}
+.acard{background:#fff;border:1px solid #d1fae5}
+.acard h3 a{color:#14532d;text-decoration:none}.acard p{color:#6b7280}
+.toolgrid a{background:#fff;border:1px solid #d1fae5;color:#14532d}
+.toolgrid a:hover{border-color:#16a34a;background:#f0fdf4}
+.tip{background:#f0fdf4;border-left:4px solid #16a34a}
+h2{color:#14532d}footer{color:#6b7280;font-size:14px;margin-top:30px;padding:20px;text-align:center}
+@media(max-width:640px){.hero{grid-template-columns:1fr}}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;line-height:1.65;font-size:16px}
+img{max-width:100%;height:auto}
+input,select,textarea,button{font-family:inherit;font-size:16px}
+input,select{width:100%;min-height:44px;padding:11px 12px;border:1px solid #cbd5e1;border-radius:8px}
+button,.btn{min-height:44px;padding:12px 22px;border:0;border-radius:8px;font-size:16px;font-weight:700;cursor:pointer;text-decoration:none;display:inline-block;text-align:center}
+.wrap{max-width:1020px;margin:0 auto;padding:0 20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
+.acard{overflow:hidden;border-radius:12px}
+.acard img{width:100%;height:160px;object-fit:cover;display:block}
+.acard div{padding:14px}
+.acard h3{margin:0 0 6px;font-size:16px;line-height:1.35}
+.acard p{margin:0;font-size:14px}
+.toolgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+.toolgrid a{padding:18px;border-radius:12px;text-decoration:none;display:block;font-weight:700}
+.result{padding:16px;border-radius:10px;margin-top:16px}
+.result .big{font-size:clamp(22px,5vw,28px);font-weight:800}
+.tip{padding:14px 16px;border-radius:10px;margin:18px 0}
+.faq h3{font-size:16px;margin:18px 0 4px}
+article img.heroimg{width:100%;max-height:380px;object-fit:cover;border-radius:12px;display:block}
+@media(max-width:640px){
+  .wrap{padding:0 14px}
+  .grid,.toolgrid{grid-template-columns:1fr}
+  .acard img{height:180px}
+  nav a{margin:0 6px}
+}
+@media(max-width:480px){
+  body{font-size:16px}
+  .wrap{padding:0 12px}
+  h1{font-size:26px !important}
+  .btn,button{width:100%}
+  .acard img{height:170px}
+}
+</style></head>
+<body><header><div class="header-in"><a class="logo" href="../index.html">Calorie Calculator</a><nav><a href="../index.html">Home</a><a href="../tools/calorie-calculator.html">Calculator</a><a href="../about.html">About</a><a href="../contact.html">Contact</a></nav></div></header><main class="wrap"><article class="card" style="margin-top:20px"><img class="heroimg" src="../images/counting-calories-for-beginners.jpg" alt="Counting Calories for Beginners">
+<h1>Counting Calories for Beginners</h1><p><em>A simple, low-stress way to start tracking what you eat, without weighing everything or giving up after a week.</em></p>
+<p>Counting calories sounds tedious, and done badly it is. Done well, it is a short experiment that teaches you what your food actually contains, and most people only need to do it seriously for a few weeks to learn the lessons. This guide gives a simple method for starting, the tools that help, and how to stop counting once you have learned enough.</p>
+<h2>Start with a week of normal eating</h2><p>Before changing anything, record what you normally eat for a week, without trying to eat less. Use a free tracking app and log everything, including drinks, sauces and snacks. This gives you a baseline: the number of calories you actually eat, not the number you think you eat. Most people are surprised, usually by 300 to 500 calories a day. The baseline is the most valuable number in the whole process, because it shows where the easy savings are.</p>
+<h2>Choose an app and learn its shortcuts</h2><p>A tracking app with a barcode scanner makes the job far quicker than typing everything by hand. Scan packaged foods, save meals you eat often as favourites, and copy yesterday&#x27;s entries when you eat the same thing. Weigh food with a kitchen scale for the first week or two, because your eye is not yet calibrated. After a few weeks, you will know your usual portions by sight, and the scale becomes optional.</p>
+<h2>Focus on the big items first</h2><p>Not every calorie deserves equal attention. A main meal, a sugary drink, or a large snack matters far more than a squeeze of lemon or a splash of vinegar. Start by getting the big items right: the main dish, the bread or rice, the drink, and the dessert. Once those are accurate, the small items barely move the total. This keeps tracking from becoming a chore, which is the main reason people quit.</p>
+<h2>What to do with the numbers</h2><p>Compare your average daily intake with your maintenance calories from a calculator. If you eat more than maintenance and your weight is rising, the gap is the problem, and you now know its size. Set a target about 500 calories below maintenance, and adjust your biggest meals first: smaller portions of the energy-dense foods, more vegetables, water instead of sugary drinks. Check your weight weekly under the same conditions, and adjust the target by 100 to 200 calories if the trend is wrong after three weeks.</p>
+<h2>When to stop counting</h2><p>Counting forever is neither necessary nor healthy for most people. Once you know the calorie content of your usual meals and you can estimate a plate by eye, you can stop daily tracking and switch to a lighter habit: tracking for a few days a month as a check, or whenever your routine changes. Keep the scale and the app for those check-ins. The goal of counting is to learn, not to keep a lifelong ledger, and the knowledge stays with you long after you stop logging.</p>
+<h2>Your first week of tracking, day by day</h2><p>Day one is the hardest, because everything is new: download an app, weigh your breakfast, and scan the barcodes. By day three, the routine is faster, because you have saved your usual meals as favourites. By day five, you know the calorie content of your breakfast, lunch and dinner without looking them up. By day seven, you have a weekly average and a baseline, and you can see where the easy savings are. The second week is easier still, because you are only logging changes, not learning from scratch. Give the experiment two full weeks before judging it, because the first week measures the learning curve as much as the food, and the second week shows what tracking is really like.</p>
+<div class="tip"><strong>Tip:</strong> Track a normal week first, before changing anything — most people discover they eat 300 to 500 calories a day more than they thought.</div>
+<h2>Frequently Asked Questions</h2><div class="faq"><h3>Do I need to count calories forever?</h3><p>No. Most people only need a few weeks of serious tracking to learn their usual foods, then can switch to occasional check-ins.</p><h3>Is a kitchen scale necessary?</h3><p>For the first week or two, yes — it calibrates your eye. After that, you can estimate your usual portions by sight.</p><h3>What if I miss a day of tracking?</h3><p>Just carry on the next day. One missed day does not matter; the weekly average is what counts.</p></div>
+<h2>Related Guides</h2><ul><li><a href="calories-burned-walking.html">Calories Burned Walking</a></li><li><a href="calories-burned-running.html">Calories Burned Running</a></li><li><a href="protein-carbs-fat-split.html">Protein, Carbs and Fat: Finding Your Split</a></li></ul>
+<p><a href="../index.html">&larr; Back to home</a></p></article></main><footer><p>Calorie Calculator — free online calculators and practical guides. <a href="../about.html">About</a> | <a href="../contact.html">Contact</a> | <a href="../privacy.html">Privacy Policy</a> | <a href="../disclaimer.html">Disclaimer</a></p><p>Results are estimates for general information only.</p></footer></body></html>
