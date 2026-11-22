@@ -1,0 +1,78 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A Worked Example: A 2,500-Calorie Day | Calorie Calculator</title>
+<meta name="description" content="A full day of meals adding up to about 2,500 calories, with the numbers for each meal and how to adapt it.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<style>
+body{font-family:Verdana,Geneva,sans-serif;color:#1f2937;background:#f6fbf3}
+a{color:#15803d}header{background:#fff;border-bottom:3px solid #16a34a;padding:14px 0}
+.header-in{max-width:1020px;margin:0 auto;padding:0 20px;display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between}
+.logo{font-size:clamp(22px,5vw,26px);font-weight:800;color:#14532d;text-decoration:none}
+.logo span{color:#16a34a}
+nav a{color:#14532d;margin:0 8px;font-weight:700;font-size:15px;text-decoration:none}
+nav a:hover{color:#16a34a;text-decoration:underline}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:28px;max-width:1020px;margin:0 auto;padding:clamp(24px,5vw,44px) 20px;align-items:center}
+.hero h1{font-size:clamp(26px,5vw,38px);line-height:1.2;margin:0 0 12px;color:#14532d}
+.hero p{font-size:clamp(15px,3vw,17px);color:#4b5563;margin:0 0 16px}
+.calc{background:#fff;max-width:560px;padding:clamp(18px,4vw,26px);border-radius:14px;box-shadow:0 10px 28px rgba(20,83,45,.14);border-top:5px solid #16a34a}
+.calc h2{font-size:20px;margin:0 0 14px;color:#14532d}
+.field{margin-bottom:14px}.field label{display:block;font-size:14px;font-weight:700;margin-bottom:5px;color:#374151}
+.btn{background:#16a34a;color:#fff}.btn:hover{background:#15803d}
+.result{background:#f0fdf4;border:1px solid #86efac}
+.card{background:#fff;border:1px solid #d1fae5;border-radius:12px;padding:22px;margin-bottom:20px}
+.acard{background:#fff;border:1px solid #d1fae5}
+.acard h3 a{color:#14532d;text-decoration:none}.acard p{color:#6b7280}
+.toolgrid a{background:#fff;border:1px solid #d1fae5;color:#14532d}
+.toolgrid a:hover{border-color:#16a34a;background:#f0fdf4}
+.tip{background:#f0fdf4;border-left:4px solid #16a34a}
+h2{color:#14532d}footer{color:#6b7280;font-size:14px;margin-top:30px;padding:20px;text-align:center}
+@media(max-width:640px){.hero{grid-template-columns:1fr}}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;line-height:1.65;font-size:16px}
+img{max-width:100%;height:auto}
+input,select,textarea,button{font-family:inherit;font-size:16px}
+input,select{width:100%;min-height:44px;padding:11px 12px;border:1px solid #cbd5e1;border-radius:8px}
+button,.btn{min-height:44px;padding:12px 22px;border:0;border-radius:8px;font-size:16px;font-weight:700;cursor:pointer;text-decoration:none;display:inline-block;text-align:center}
+.wrap{max-width:1020px;margin:0 auto;padding:0 20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
+.acard{overflow:hidden;border-radius:12px}
+.acard img{width:100%;height:160px;object-fit:cover;display:block}
+.acard div{padding:14px}
+.acard h3{margin:0 0 6px;font-size:16px;line-height:1.35}
+.acard p{margin:0;font-size:14px}
+.toolgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+.toolgrid a{padding:18px;border-radius:12px;text-decoration:none;display:block;font-weight:700}
+.result{padding:16px;border-radius:10px;margin-top:16px}
+.result .big{font-size:clamp(22px,5vw,28px);font-weight:800}
+.tip{padding:14px 16px;border-radius:10px;margin:18px 0}
+.faq h3{font-size:16px;margin:18px 0 4px}
+article img.heroimg{width:100%;max-height:380px;object-fit:cover;border-radius:12px;display:block}
+@media(max-width:640px){
+  .wrap{padding:0 14px}
+  .grid,.toolgrid{grid-template-columns:1fr}
+  .acard img{height:180px}
+  nav a{margin:0 6px}
+}
+@media(max-width:480px){
+  body{font-size:16px}
+  .wrap{padding:0 12px}
+  h1{font-size:26px !important}
+  .btn,button{width:100%}
+  .acard img{height:170px}
+}
+</style></head>
+<body><header><div class="header-in"><a class="logo" href="../index.html">Calorie Calculator</a><nav><a href="../index.html">Home</a><a href="../tools/calorie-calculator.html">Calculator</a><a href="../about.html">About</a><a href="../contact.html">Contact</a></nav></div></header><main class="wrap"><article class="card" style="margin-top:20px"><img class="heroimg" src="../images/worked-example-2500-calorie-day.jpg" alt="A Worked Example: A 2,500-Calorie Day">
+<h1>A Worked Example: A 2,500-Calorie Day</h1><p><em>A full day of meals adding up to about 2,500 calories, with the numbers for each meal and how to adapt it.</em></p>
+<p>A calorie target is easier to follow when you can see what a day at that number actually looks like. This worked example builds a day of about 2,500 calories, a common maintenance level for a moderately active man, with real foods and real numbers. The portions are examples, and the calorie values are approximate, because brands and cooking methods vary. Use it as a template, not a prescription, and adjust the portions to your own target.</p>
+<h2>Breakfast: about 600 calories</h2><p>A bowl of oats made with milk, a banana, and a spoonful of peanut butter comes to roughly 500 to 600 calories, with about 20 grams of protein. The oats provide slow-release carbohydrate, the milk and peanut butter add protein and fat, and the banana adds sweetness and potassium. A glass of water or black coffee adds nothing. If you prefer eggs, two eggs on toast with a tomato comes to a similar total, around 550 calories, with more protein and less carbohydrate. Either breakfast keeps you full until lunch, which is the point.</p>
+<h2>Lunch: about 700 calories</h2><p>A chicken and rice bowl with vegetables and a drizzle of olive oil comes to roughly 650 to 750 calories. The chicken provides about 40 grams of protein, the rice provides the carbohydrate, and the vegetables add volume and nutrients for very few calories. A sandwich with wholemeal bread, chicken, salad and a little mayonnaise is a similar total, around 600 to 700 calories. A sugary drink would add 150 calories without filling you up, so water is the better choice with the meal.</p>
+<h2>Dinner: about 800 calories</h2><p>A plate of pasta with a tomato and minced meat sauce, a side salad, and a slice of bread comes to roughly 750 to 850 calories. The pasta is the main source of carbohydrate, the meat provides protein, and the salad adds volume. A piece of grilled fish with potatoes and vegetables is a similar total, around 700 to 800 calories. Cooking with a measured tablespoon of oil instead of pouring freely saves about 100 calories without changing the meal.</p>
+<h2>Snacks: about 400 calories</h2><p>Two snacks fill the gap between meals: an apple with a small handful of nuts in the afternoon, roughly 200 calories, and a pot of yoghurt with berries in the evening, roughly 200 calories. The nuts add healthy fats and protein, the fruit adds fibre and sweetness, and the yoghurt adds protein. Snacks are where many days go wrong, because they are often unplanned; choosing them in advance, as here, keeps the day on target without hunger.</p>
+<h2>Adapting the day to your target</h2><p>To make this a 2,000-calorie day, cut the snacks and reduce the rice or pasta portion by a third, which saves about 500 calories. To make it a 3,000-calorie day, add a larger breakfast, a second sandwich at lunch, or a smoothie with milk, oats and banana, which adds about 400 to 500 calories. The structure stays the same; only the portions change. That is the practical skill of calorie management: knowing which foods to scale up or down, and by how much.</p>
+<h2>A day at 2,500 calories, checked</h2><p>Add the example day up: breakfast at 600, lunch at 700, dinner at 800 and snacks at 400, for a total of 2,500 calories. The protein is about 120 grams, from the peanut butter and milk at breakfast, the chicken at lunch, the meat at dinner, and the yoghurt snack. The carbohydrate is about 300 grams, mostly from oats, rice and pasta. The fat is about 80 grams, from olive oil, nuts and dairy. If your target is 2,000, the simplest cut is to drop the snacks and reduce the rice or pasta by a third, which saves about 500 calories without changing the structure. If your target is 3,000, add a smoothie with milk, oats and banana, which adds about 500. The structure stays the same; only the portions move, which is the skill that makes calorie management practical.</p>
+<div class="tip"><strong>Tip:</strong> This is a template, not a prescription: to cut it to 2,000 calories, drop the snacks and trim the rice or pasta by a third; to reach 3,000, add a smoothie or a larger breakfast.</div>
+<h2>Frequently Asked Questions</h2><div class="faq"><h3>What does a 2,500-calorie day look like?</h3><p>Roughly 600 at breakfast, 700 at lunch, 800 at dinner and 400 in snacks — for example oats with banana, a chicken rice bowl, pasta with meat sauce, and fruit with nuts.</p><h3>Are these calorie numbers exact?</h3><p>No, they are approximate. Brands, recipes and cooking methods change the values, so treat them as a guide for planning portions.</p><h3>How do I adapt this to my own target?</h3><p>Keep the structure and scale the portions: cut snacks and starch portions to go lower, add a smoothie or larger breakfast to go higher.</p></div>
+<h2>Related Guides</h2><ul><li><a href="metabolism-myths.html">Metabolism Myths Debunked</a></li><li><a href="how-to-use-calorie-calculator.html">How to Use a Calorie Calculator</a></li><li><a href="what-is-bmr.html">What Is BMR? Basal Metabolic Rate Explained</a></li></ul>
+<p><a href="../index.html">&larr; Back to home</a></p></article></main><footer><p>Calorie Calculator — free online calculators and practical guides. <a href="../about.html">About</a> | <a href="../contact.html">Contact</a> | <a href="../privacy.html">Privacy Policy</a> | <a href="../disclaimer.html">Disclaimer</a></p><p>Results are estimates for general information only.</p></footer></body></html>

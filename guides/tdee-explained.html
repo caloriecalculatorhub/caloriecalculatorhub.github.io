@@ -1,0 +1,78 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TDEE Explained: Total Daily Energy Expenditure | Calorie Calculator</title>
+<meta name="description" content="What TDEE is, how the activity multipliers work, and how to use your TDEE for weight loss, gain or maintenance.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<style>
+body{font-family:Verdana,Geneva,sans-serif;color:#1f2937;background:#f6fbf3}
+a{color:#15803d}header{background:#fff;border-bottom:3px solid #16a34a;padding:14px 0}
+.header-in{max-width:1020px;margin:0 auto;padding:0 20px;display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between}
+.logo{font-size:clamp(22px,5vw,26px);font-weight:800;color:#14532d;text-decoration:none}
+.logo span{color:#16a34a}
+nav a{color:#14532d;margin:0 8px;font-weight:700;font-size:15px;text-decoration:none}
+nav a:hover{color:#16a34a;text-decoration:underline}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:28px;max-width:1020px;margin:0 auto;padding:clamp(24px,5vw,44px) 20px;align-items:center}
+.hero h1{font-size:clamp(26px,5vw,38px);line-height:1.2;margin:0 0 12px;color:#14532d}
+.hero p{font-size:clamp(15px,3vw,17px);color:#4b5563;margin:0 0 16px}
+.calc{background:#fff;max-width:560px;padding:clamp(18px,4vw,26px);border-radius:14px;box-shadow:0 10px 28px rgba(20,83,45,.14);border-top:5px solid #16a34a}
+.calc h2{font-size:20px;margin:0 0 14px;color:#14532d}
+.field{margin-bottom:14px}.field label{display:block;font-size:14px;font-weight:700;margin-bottom:5px;color:#374151}
+.btn{background:#16a34a;color:#fff}.btn:hover{background:#15803d}
+.result{background:#f0fdf4;border:1px solid #86efac}
+.card{background:#fff;border:1px solid #d1fae5;border-radius:12px;padding:22px;margin-bottom:20px}
+.acard{background:#fff;border:1px solid #d1fae5}
+.acard h3 a{color:#14532d;text-decoration:none}.acard p{color:#6b7280}
+.toolgrid a{background:#fff;border:1px solid #d1fae5;color:#14532d}
+.toolgrid a:hover{border-color:#16a34a;background:#f0fdf4}
+.tip{background:#f0fdf4;border-left:4px solid #16a34a}
+h2{color:#14532d}footer{color:#6b7280;font-size:14px;margin-top:30px;padding:20px;text-align:center}
+@media(max-width:640px){.hero{grid-template-columns:1fr}}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;line-height:1.65;font-size:16px}
+img{max-width:100%;height:auto}
+input,select,textarea,button{font-family:inherit;font-size:16px}
+input,select{width:100%;min-height:44px;padding:11px 12px;border:1px solid #cbd5e1;border-radius:8px}
+button,.btn{min-height:44px;padding:12px 22px;border:0;border-radius:8px;font-size:16px;font-weight:700;cursor:pointer;text-decoration:none;display:inline-block;text-align:center}
+.wrap{max-width:1020px;margin:0 auto;padding:0 20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
+.acard{overflow:hidden;border-radius:12px}
+.acard img{width:100%;height:160px;object-fit:cover;display:block}
+.acard div{padding:14px}
+.acard h3{margin:0 0 6px;font-size:16px;line-height:1.35}
+.acard p{margin:0;font-size:14px}
+.toolgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+.toolgrid a{padding:18px;border-radius:12px;text-decoration:none;display:block;font-weight:700}
+.result{padding:16px;border-radius:10px;margin-top:16px}
+.result .big{font-size:clamp(22px,5vw,28px);font-weight:800}
+.tip{padding:14px 16px;border-radius:10px;margin:18px 0}
+.faq h3{font-size:16px;margin:18px 0 4px}
+article img.heroimg{width:100%;max-height:380px;object-fit:cover;border-radius:12px;display:block}
+@media(max-width:640px){
+  .wrap{padding:0 14px}
+  .grid,.toolgrid{grid-template-columns:1fr}
+  .acard img{height:180px}
+  nav a{margin:0 6px}
+}
+@media(max-width:480px){
+  body{font-size:16px}
+  .wrap{padding:0 12px}
+  h1{font-size:26px !important}
+  .btn,button{width:100%}
+  .acard img{height:170px}
+}
+</style></head>
+<body><header><div class="header-in"><a class="logo" href="../index.html">Calorie Calculator</a><nav><a href="../index.html">Home</a><a href="../tools/calorie-calculator.html">Calculator</a><a href="../about.html">About</a><a href="../contact.html">Contact</a></nav></div></header><main class="wrap"><article class="card" style="margin-top:20px"><img class="heroimg" src="../images/tdee-explained.jpg" alt="TDEE Explained: Total Daily Energy Expenditure">
+<h1>TDEE Explained: Total Daily Energy Expenditure</h1><p><em>What TDEE is, how the activity multipliers work, and how to use your TDEE for weight loss, gain or maintenance.</em></p>
+<p>Total daily energy expenditure, or TDEE, is the total number of calories you burn in a day, from everything your body does. It is the single most useful number in weight management: eat near it to maintain weight, below it to lose weight, and above it to gain weight. TDEE is built from your resting metabolism plus the energy of movement, exercise and digestion. This guide explains each part and how to calculate your own TDEE.</p>
+<h2>The four parts of TDEE</h2><p>TDEE has four components. The largest is your basal metabolic rate, the energy of staying alive at rest, which is roughly 60 to 75 percent of the total. Next is the energy of movement and exercise, which varies enormously: a desk worker may burn only a few hundred calories this way, while a manual worker or athlete may burn over a thousand. Then comes the thermic effect of food, the energy used to digest and process meals, roughly 10 percent of what you eat. The smallest part is the energy used to stay warm, which depends on the climate and is usually minor indoors.</p>
+<h2>How the activity multipliers work</h2><p>Calculators estimate the movement part of TDEE with a multiplier applied to BMR. The standard scale runs from 1.2 for sedentary, through 1.375 for lightly active, 1.55 for moderately active, 1.725 for very active, to 1.9 for extra active. Each step adds roughly 150 to 300 calories for an average adult. The multiplier is an average for a whole lifestyle, not just exercise: a person who exercises hard for an hour but sits for the other 15 waking hours may still be only moderately active. Daily step count is a useful check: under 5,000 steps a day is usually sedentary, while over 10,000 suggests at least moderate activity.</p>
+<h2>Worked example</h2><p>Take a 40-year-old man who weighs 85 kg, is 180 cm tall, and exercises moderately three to five days a week. His BMR is 10 times 85, or 850, plus 6.25 times 180, or 1,125, minus 5 times 40, or 200, plus 5, which gives 1,780 calories. Multiply by the moderate activity factor of 1.55 and his TDEE is about 2,759 calories a day. If he wanted to lose about 0.5 kg a week, he would aim for roughly 2,260 calories a day. If he changed to a desk job and stopped exercising, his multiplier would fall to 1.2 and his TDEE to about 2,136 calories, a drop of more than 600 calories from the same body.</p>
+<h2>Using TDEE to lose weight</h2><p>Weight loss comes from eating below TDEE. A deficit of about 500 calories a day is the standard starting point, producing roughly 0.5 kg of loss per week, because a kilogram of body fat stores roughly 7,700 calories. Larger deficits lose weight faster but are harder to sustain and more likely to cost muscle. Track your weight weekly under the same conditions and compare it with the plan: if you lose faster than expected, eat a little more; if nothing changes after three weeks, eat a little less or move a little more. TDEE is a starting estimate, and your body&#x27;s response is the real test.</p>
+<h2>Using TDEE to gain weight or maintain it</h2><p>To gain weight, eat about 300 to 500 calories above TDEE, focusing on nutrient-rich foods and strength training so the gain is mostly muscle rather than fat. To maintain weight, eat close to TDEE and weigh yourself weekly: a steady weight over a month means your estimate is right. Remember that TDEE changes as your body changes, so recalculate after every 5 kg of change or every couple of months. A TDEE that is never updated slowly becomes wrong, and a plan built on a wrong number stops working.</p>
+<h2>A worked example across activity levels</h2><p>Take a 30-year-old woman who weighs 65 kg and is 165 cm tall. Her BMR is 1,370 calories. At a sedentary multiplier of 1.2, her TDEE is about 1,644 calories. At lightly active, 1.375, it is about 1,884. At moderately active, 1.55, it is about 2,124. At very active, 1.725, it is about 2,363. At extra active, 1.9, it is about 2,603. The gap between sedentary and extra active is nearly 1,000 calories a day, from the same body, which shows how much lifestyle matters. It also shows why the activity choice is the most important input in the calculator: a single wrong step changes the answer by 200 to 300 calories, more than any error in weight or height.</p>
+<div class="tip"><strong>Tip:</strong> A single step on the activity scale is worth roughly 150 to 300 calories a day — so an honest activity choice matters more than a perfect weight measurement.</div>
+<h2>Frequently Asked Questions</h2><div class="faq"><h3>What is TDEE?</h3><p>Total daily energy expenditure: all the calories you burn in a day, including resting metabolism, movement, exercise and digestion.</p><h3>How do I calculate my TDEE?</h3><p>Calculate BMR from age, sex, weight and height, then multiply by an activity factor from 1.2 (sedentary) to 1.9 (extra active).</p><h3>Why is my TDEE different from my friend&#x27;s?</h3><p>Size, age, sex, muscle mass and daily activity all change it. Two people of the same weight can have TDEEs hundreds of calories apart.</p></div>
+<h2>Related Guides</h2><ul><li><a href="calories-to-lose-weight.html">How Many Calories to Lose Weight</a></li><li><a href="calories-to-gain-weight.html">How Many Calories to Gain Weight</a></li><li><a href="activity-multipliers-explained.html">Activity Multipliers Explained</a></li></ul>
+<p><a href="../index.html">&larr; Back to home</a></p></article></main><footer><p>Calorie Calculator — free online calculators and practical guides. <a href="../about.html">About</a> | <a href="../contact.html">Contact</a> | <a href="../privacy.html">Privacy Policy</a> | <a href="../disclaimer.html">Disclaimer</a></p><p>Results are estimates for general information only.</p></footer></body></html>
