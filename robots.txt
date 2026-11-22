@@ -1,5 +1,3 @@
 User-agent: *
 Allow: /
 Sitemap: https://caloriecalculatorhub.github.io/sitemap.xml
-
-
