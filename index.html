@@ -1,0 +1,98 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calorie Calculator | Calorie Calculator</title>
+<meta name="description" content="Free daily calorie, BMR and calories-burned calculators with practical, plain guides.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<style>
+body{font-family:Verdana,Geneva,sans-serif;color:#1f2937;background:#f6fbf3}
+a{color:#15803d}header{background:#fff;border-bottom:3px solid #16a34a;padding:14px 0}
+.header-in{max-width:1020px;margin:0 auto;padding:0 20px;display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between}
+.logo{font-size:clamp(22px,5vw,26px);font-weight:800;color:#14532d;text-decoration:none}
+.logo span{color:#16a34a}
+nav a{color:#14532d;margin:0 8px;font-weight:700;font-size:15px;text-decoration:none}
+nav a:hover{color:#16a34a;text-decoration:underline}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:28px;max-width:1020px;margin:0 auto;padding:clamp(24px,5vw,44px) 20px;align-items:center}
+.hero h1{font-size:clamp(26px,5vw,38px);line-height:1.2;margin:0 0 12px;color:#14532d}
+.hero p{font-size:clamp(15px,3vw,17px);color:#4b5563;margin:0 0 16px}
+.calc{background:#fff;max-width:560px;padding:clamp(18px,4vw,26px);border-radius:14px;box-shadow:0 10px 28px rgba(20,83,45,.14);border-top:5px solid #16a34a}
+.calc h2{font-size:20px;margin:0 0 14px;color:#14532d}
+.field{margin-bottom:14px}.field label{display:block;font-size:14px;font-weight:700;margin-bottom:5px;color:#374151}
+.btn{background:#16a34a;color:#fff}.btn:hover{background:#15803d}
+.result{background:#f0fdf4;border:1px solid #86efac}
+.card{background:#fff;border:1px solid #d1fae5;border-radius:12px;padding:22px;margin-bottom:20px}
+.acard{background:#fff;border:1px solid #d1fae5}
+.acard h3 a{color:#14532d;text-decoration:none}.acard p{color:#6b7280}
+.toolgrid a{background:#fff;border:1px solid #d1fae5;color:#14532d}
+.toolgrid a:hover{border-color:#16a34a;background:#f0fdf4}
+.tip{background:#f0fdf4;border-left:4px solid #16a34a}
+h2{color:#14532d}footer{color:#6b7280;font-size:14px;margin-top:30px;padding:20px;text-align:center}
+@media(max-width:640px){.hero{grid-template-columns:1fr}}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;line-height:1.65;font-size:16px}
+img{max-width:100%;height:auto}
+input,select,textarea,button{font-family:inherit;font-size:16px}
+input,select{width:100%;min-height:44px;padding:11px 12px;border:1px solid #cbd5e1;border-radius:8px}
+button,.btn{min-height:44px;padding:12px 22px;border:0;border-radius:8px;font-size:16px;font-weight:700;cursor:pointer;text-decoration:none;display:inline-block;text-align:center}
+.wrap{max-width:1020px;margin:0 auto;padding:0 20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
+.acard{overflow:hidden;border-radius:12px}
+.acard img{width:100%;height:160px;object-fit:cover;display:block}
+.acard div{padding:14px}
+.acard h3{margin:0 0 6px;font-size:16px;line-height:1.35}
+.acard p{margin:0;font-size:14px}
+.toolgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+.toolgrid a{padding:18px;border-radius:12px;text-decoration:none;display:block;font-weight:700}
+.result{padding:16px;border-radius:10px;margin-top:16px}
+.result .big{font-size:clamp(22px,5vw,28px);font-weight:800}
+.tip{padding:14px 16px;border-radius:10px;margin:18px 0}
+.faq h3{font-size:16px;margin:18px 0 4px}
+article img.heroimg{width:100%;max-height:380px;object-fit:cover;border-radius:12px;display:block}
+@media(max-width:640px){
+  .wrap{padding:0 14px}
+  .grid,.toolgrid{grid-template-columns:1fr}
+  .acard img{height:180px}
+  nav a{margin:0 6px}
+}
+@media(max-width:480px){
+  body{font-size:16px}
+  .wrap{padding:0 12px}
+  h1{font-size:26px !important}
+  .btn,button{width:100%}
+  .acard img{height:170px}
+}
+</style></head>
+<body><header><div class="header-in"><a class="logo" href="index.html">Calorie Calculator</a><nav><a href="index.html">Home</a><a href="tools/calorie-calculator.html">Calculator</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav></div></header><section class="hero"><div><h1>Calorie Calculator — How Many Calories Do You Need a Day?</h1><p>Estimate your daily calorie needs from your age, sex, weight, height and activity — then plan weight loss, gain or maintenance with confidence.</p><p><a class="btn" href="tools/calorie-calculator.html">Open the Calculator</a></p></div><div class="calc"><h2>Calorie Calculator</h2><div class="field"><label for="sex">Sex</label><select id="sex"><option value="male">Male</option><option value="female">Female</option></select></div>
+<div class="field"><label for="age">Age (years)</label><input type="number" id="age" value="30" min="10" max="100"></div>
+<div class="field"><label for="weight">Weight (kg)</label><input type="number" id="weight" value="70" min="25" max="300" step="0.1"></div>
+<div class="field"><label for="height">Height (cm)</label><input type="number" id="height" value="175" min="120" max="230"></div>
+<div class="field"><label for="act">Activity level</label><select id="act">
+<option value="1.2">Sedentary — little or no exercise</option>
+<option value="1.375">Lightly active — light exercise 1–3 days/week</option>
+<option value="1.55" selected>Moderately active — moderate exercise 3–5 days/week</option>
+<option value="1.725">Very active — hard exercise 6–7 days/week</option>
+<option value="1.9">Extra active — physical job and daily hard exercise</option></select></div>
+<button class="btn" type="button" onclick="calcCal()">Calculate My Calories</button>
+<div id="out" class="result" style="display:none"></div>
+<script>
+function calcCal(){
+  var sex=document.getElementById('sex').value;
+  var age=parseFloat(document.getElementById('age').value);
+  var w=parseFloat(document.getElementById('weight').value);
+  var h=parseFloat(document.getElementById('height').value);
+  var act=parseFloat(document.getElementById('act').value);
+  var out=document.getElementById('out');
+  if(isNaN(age)||isNaN(w)||isNaN(h)||age<10||age>100||w<25||w>300||h<120||h>230){
+    out.style.display='block';out.innerHTML='Please check your entries: age 10–100, weight 25–300 kg, height 120–230 cm.';return;}
+  var bmr = sex==='male' ? 10*w+6.25*h-5*age+5 : 10*w+6.25*h-5*age-161;
+  var tdee = bmr*act;
+  var r=Math.round;
+  out.style.display='block';
+  out.innerHTML='<p>Your estimated daily calorie needs:</p><p class="big">'+r(tdee).toLocaleString()+' kcal/day</p>'
+   +'<p>Resting metabolism (BMR): <strong>'+r(bmr).toLocaleString()+' kcal/day</strong></p>'
+   +'<p>To lose about 0.5 kg per week, aim for roughly <strong>'+r(tdee-500).toLocaleString()+' kcal/day</strong>. '
+   +'To gain about 0.5 kg per week, aim for roughly <strong>'+r(tdee+500).toLocaleString()+' kcal/day</strong>.</p>'
+   +'<p>These are estimates from the Mifflin-St Jeor equation. A safe rate of weight change is about 0.5 kg per week, and very low intakes should be discussed with a doctor.</p>';
+}
+</script></div></section><main class="wrap"><section><h2>How It Works</h2><p>Our calorie calculator uses the Mifflin-St Jeor equation to estimate your resting metabolism, then multiplies it by your activity level to give your total daily needs. Enter your details in the <a href="tools/calorie-calculator.html">main calculator</a> and you will get your daily calories, your BMR, and targets for losing or gaining about 0.5 kg a week.</p><p>If you want the detail, our guide to <a href="guides/what-is-bmr.html">what BMR is</a> explains the resting number, and <a href="guides/tdee-explained.html">TDEE explained</a> covers the total. The <a href="guides/activity-multipliers-explained.html">activity multipliers guide</a> helps you pick the right level — the step most people get wrong — and <a href="guides/how-to-use-calorie-calculator.html">how to use the calculator</a> walks through the whole process.</p><p>For weight change, see <a href="guides/calories-to-lose-weight.html">how many calories to lose weight</a> and <a href="guides/calories-to-gain-weight.html">how many to gain weight</a>, plus the <a href="guides/weight-loss-planner.html">weight loss and gain planner</a> for a personal timeline. And if progress stalls, <a href="guides/weight-loss-plateau.html">breaking a plateau</a> explains why it happens and how to restart it.</p></section><section><h2>All Calculators</h2><div class="toolgrid"><a href="tools/calorie-calculator.html"><strong>Calorie Calculator</strong><br><span style="font-weight:400;font-size:14px">Estimate your daily calorie needs from your age, sex, weight, height and activity level.</span></a><a href="tools/bmr-calculator.html"><strong>BMR Calculator</strong><br><span style="font-weight:400;font-size:14px">Calculate your basal metabolic rate — the calories your body burns at complete rest.</span></a><a href="tools/calories-burned-calculator.html"><strong>Calories Burned Calculator</strong><br><span style="font-weight:400;font-size:14px">Estimate calories burned by walking, running, cycling, swimming and more.</span></a><a href="tools/weight-loss-planner.html"><strong>Weight Loss &amp; Gain Planner</strong><br><span style="font-weight:400;font-size:14px">Plan a daily calorie target and a realistic timeline to reach your target weight.</span></a></div></section><section><h2>Guides</h2><div class="grid"><div class="acard"><a href="guides/how-to-use-calorie-calculator.html"><img src="images/how-to-use-calorie-calculator.jpg" alt="How to Use a Calorie Calculator" loading="lazy"></a><div><h3><a href="guides/how-to-use-calorie-calculator.html">How to Use a Calorie Calculator</a></h3><p>A step-by-step guide to getting an accurate daily calorie estimate from your age, weight, height and activity.</p></div></div><div class="acard"><a href="guides/what-is-bmr.html"><img src="images/what-is-bmr.jpg" alt="What Is BMR? Basal Metabolic Rate Explained" loading="lazy"></a><div><h3><a href="guides/what-is-bmr.html">What Is BMR? Basal Metabolic Rate Explained</a></h3><p>What basal metabolic rate means, how it is calculated, and why it is the foundation of every calorie estimate.</p></div></div><div class="acard"><a href="guides/tdee-explained.html"><img src="images/tdee-explained.jpg" alt="TDEE Explained: Total Daily Energy Expenditure" loading="lazy"></a><div><h3><a href="guides/tdee-explained.html">TDEE Explained: Total Daily Energy Expenditure</a></h3><p>What TDEE is, how the activity multipliers work, and how to use your TDEE for weight loss, gain or maintenance.</p></div></div><div class="acard"><a href="guides/calories-to-lose-weight.html"><img src="images/calories-to-lose-weight.jpg" alt="How Many Calories to Lose Weight" loading="lazy"></a><div><h3><a href="guides/calories-to-lose-weight.html">How Many Calories to Lose Weight</a></h3><p>How to set a calorie target for weight loss, how fast to expect results, and how to adjust when progress stalls.</p></div></div><div class="acard"><a href="guides/calories-to-gain-weight.html"><img src="images/calories-to-gain-weight.jpg" alt="How Many Calories to Gain Weight" loading="lazy"></a><div><h3><a href="guides/calories-to-gain-weight.html">How Many Calories to Gain Weight</a></h3><p>How to set a calorie surplus for healthy weight gain, what to eat, and how to make sure the gain is mostly muscle.</p></div></div><div class="acard"><a href="guides/activity-multipliers-explained.html"><img src="images/activity-multipliers-explained.jpg" alt="Activity Multipliers Explained" loading="lazy"></a><div><h3><a href="guides/activity-multipliers-explained.html">Activity Multipliers Explained</a></h3><p>What the 1.2 to 1.9 activity factors mean, how to pick the right one, and the mistakes that inflate your estimate.</p></div></div><div class="acard"><a href="guides/calorie-deficit-mistakes.html"><img src="images/calorie-deficit-mistakes.jpg" alt="Calorie Deficit Mistakes to Avoid" loading="lazy"></a><div><h3><a href="guides/calorie-deficit-mistakes.html">Calorie Deficit Mistakes to Avoid</a></h3><p>The most common errors that stall weight loss, from hidden calories to shrinking deficits, and how to fix each one.</p></div></div><div class="acard"><a href="guides/counting-calories-for-beginners.html"><img src="images/counting-calories-for-beginners.jpg" alt="Counting Calories for Beginners" loading="lazy"></a><div><h3><a href="guides/counting-calories-for-beginners.html">Counting Calories for Beginners</a></h3><p>A simple, low-stress way to start tracking what you eat, without weighing everything or giving up after a week.</p></div></div><div class="acard"><a href="guides/calories-burned-walking.html"><img src="images/calories-burned-walking.jpg" alt="Calories Burned Walking" loading="lazy"></a><div><h3><a href="guides/calories-burned-walking.html">Calories Burned Walking</a></h3><p>How many calories walking really burns, how pace, weight and hills change it, and how to use walking for weight loss.</p></div></div><div class="acard"><a href="guides/calories-burned-running.html"><img src="images/calories-burned-running.jpg" alt="Calories Burned Running" loading="lazy"></a><div><h3><a href="guides/calories-burned-running.html">Calories Burned Running</a></h3><p>How many calories running burns at different paces and weights, and how running fits into a weight-loss plan.</p></div></div><div class="acard"><a href="guides/protein-carbs-fat-split.html"><img src="images/protein-carbs-fat-split.jpg" alt="Protein, Carbs and Fat: Finding Your Split" loading="lazy"></a><div><h3><a href="guides/protein-carbs-fat-split.html">Protein, Carbs and Fat: Finding Your Split</a></h3><p>How to divide your daily calories between protein, carbohydrate and fat, and how the split changes with your goal.</p></div></div><div class="acard"><a href="guides/calorie-needs-by-age.html"><img src="images/calorie-needs-by-age.jpg" alt="Calorie Needs by Age" loading="lazy"></a><div><h3><a href="guides/calorie-needs-by-age.html">Calorie Needs by Age</a></h3><p>How daily calorie needs change from your 20s to your 70s, and how to adjust your eating as you age.</p></div></div><div class="acard"><a href="guides/calorie-needs-for-men.html"><img src="images/calorie-needs-for-men.jpg" alt="Calorie Needs for Men" loading="lazy"></a><div><h3><a href="guides/calorie-needs-for-men.html">Calorie Needs for Men</a></h3><p>How many calories men typically need, what drives the number, and how activity and muscle change it.</p></div></div><div class="acard"><a href="guides/calorie-needs-for-women.html"><img src="images/calorie-needs-for-women.jpg" alt="Calorie Needs for Women" loading="lazy"></a><div><h3><a href="guides/calorie-needs-for-women.html">Calorie Needs for Women</a></h3><p>How many calories women typically need, how the number changes through life, and how to find your own figure.</p></div></div><div class="acard"><a href="guides/weight-loss-plateau.html"><img src="images/weight-loss-plateau.jpg" alt="Breaking a Weight Loss Plateau" loading="lazy"></a><div><h3><a href="guides/weight-loss-plateau.html">Breaking a Weight Loss Plateau</a></h3><p>Why weight loss stalls, how to tell a real plateau from normal fluctuation, and the steps that restart progress.</p></div></div><div class="acard"><a href="guides/eating-out-calorie-guide.html"><img src="images/eating-out-calorie-guide.jpg" alt="Eating Out: A Calorie Guide" loading="lazy"></a><div><h3><a href="guides/eating-out-calorie-guide.html">Eating Out: A Calorie Guide</a></h3><p>How to enjoy restaurants and takeaways without wrecking your calorie target, and the choices that save the most calories.</p></div></div><div class="acard"><a href="guides/calorie-tracking-apps-vs-manual.html"><img src="images/calorie-tracking-apps-vs-manual.jpg" alt="Calorie Tracking Apps vs Manual Tracking" loading="lazy"></a><div><h3><a href="guides/calorie-tracking-apps-vs-manual.html">Calorie Tracking Apps vs Manual Tracking</a></h3><p>Whether to track with an app or by hand, the strengths of each, and how to choose the method you will actually keep using.</p></div></div><div class="acard"><a href="guides/maintenance-calories-guide.html"><img src="images/maintenance-calories-guide.jpg" alt="Maintenance Calories: A Guide" loading="lazy"></a><div><h3><a href="guides/maintenance-calories-guide.html">Maintenance Calories: A Guide</a></h3><p>How to find the calories that keep your weight steady, and how to eat at maintenance without counting forever.</p></div></div><div class="acard"><a href="guides/worked-example-2500-calorie-day.html"><img src="images/worked-example-2500-calorie-day.jpg" alt="A Worked Example: A 2,500-Calorie Day" loading="lazy"></a><div><h3><a href="guides/worked-example-2500-calorie-day.html">A Worked Example: A 2,500-Calorie Day</a></h3><p>A full day of meals adding up to about 2,500 calories, with the numbers for each meal and how to adapt it.</p></div></div><div class="acard"><a href="guides/metabolism-myths.html"><img src="images/metabolism-myths.jpg" alt="Metabolism Myths Debunked" loading="lazy"></a><div><h3><a href="guides/metabolism-myths.html">Metabolism Myths Debunked</a></h3><p>The most common wrong ideas about metabolism, from starvation mode to miracle foods, and what the evidence actually says.</p></div></div></div><p style="margin-top:16px"><a class="btn" href="guides/how-to-use-calorie-calculator.html">Browse all guides</a></p></section><section><h2>Frequently Asked Questions</h2><div class="faq"><h3>How many calories should I eat a day?</h3><p>It depends on your age, sex, weight, height and activity. A moderately active adult typically needs roughly 2,000 to 2,600 calories a day. Use the calculator for a personal estimate.</p><h3>What is BMR?</h3><p>Basal metabolic rate: the calories your body burns at complete rest. It is roughly 60 to 75 percent of your daily total.</p><h3>What is TDEE?</h3><p>Total daily energy expenditure: all the calories you burn in a day, including resting metabolism, movement, exercise and digestion.</p><h3>How many calories do I need to lose weight?</h3><p>About 500 below your maintenance calories, for roughly 0.5 kg of loss per week.</p><h3>Is the calculator accurate?</h3><p>It is an estimate, usually within about 10 percent. Use it as a starting point and adjust from your results over two to three weeks.</p><h3>Is my data stored anywhere?</h3><p>No. The calculation runs in your browser, and nothing you enter is sent or stored.</p></div></section></main><footer><p>Calorie Calculator — free online calculators and practical guides. <a href="about.html">About</a> | <a href="contact.html">Contact</a> | <a href="privacy.html">Privacy Policy</a> | <a href="disclaimer.html">Disclaimer</a></p><p>Results are estimates for general information only.</p></footer></body></html>
