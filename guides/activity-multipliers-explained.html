@@ -1,0 +1,78 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Activity Multipliers Explained | Calorie Calculator</title>
+<meta name="description" content="What the 1.2 to 1.9 activity factors mean, how to pick the right one, and the mistakes that inflate your estimate.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<style>
+body{font-family:Verdana,Geneva,sans-serif;color:#1f2937;background:#f6fbf3}
+a{color:#15803d}header{background:#fff;border-bottom:3px solid #16a34a;padding:14px 0}
+.header-in{max-width:1020px;margin:0 auto;padding:0 20px;display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between}
+.logo{font-size:clamp(22px,5vw,26px);font-weight:800;color:#14532d;text-decoration:none}
+.logo span{color:#16a34a}
+nav a{color:#14532d;margin:0 8px;font-weight:700;font-size:15px;text-decoration:none}
+nav a:hover{color:#16a34a;text-decoration:underline}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:28px;max-width:1020px;margin:0 auto;padding:clamp(24px,5vw,44px) 20px;align-items:center}
+.hero h1{font-size:clamp(26px,5vw,38px);line-height:1.2;margin:0 0 12px;color:#14532d}
+.hero p{font-size:clamp(15px,3vw,17px);color:#4b5563;margin:0 0 16px}
+.calc{background:#fff;max-width:560px;padding:clamp(18px,4vw,26px);border-radius:14px;box-shadow:0 10px 28px rgba(20,83,45,.14);border-top:5px solid #16a34a}
+.calc h2{font-size:20px;margin:0 0 14px;color:#14532d}
+.field{margin-bottom:14px}.field label{display:block;font-size:14px;font-weight:700;margin-bottom:5px;color:#374151}
+.btn{background:#16a34a;color:#fff}.btn:hover{background:#15803d}
+.result{background:#f0fdf4;border:1px solid #86efac}
+.card{background:#fff;border:1px solid #d1fae5;border-radius:12px;padding:22px;margin-bottom:20px}
+.acard{background:#fff;border:1px solid #d1fae5}
+.acard h3 a{color:#14532d;text-decoration:none}.acard p{color:#6b7280}
+.toolgrid a{background:#fff;border:1px solid #d1fae5;color:#14532d}
+.toolgrid a:hover{border-color:#16a34a;background:#f0fdf4}
+.tip{background:#f0fdf4;border-left:4px solid #16a34a}
+h2{color:#14532d}footer{color:#6b7280;font-size:14px;margin-top:30px;padding:20px;text-align:center}
+@media(max-width:640px){.hero{grid-template-columns:1fr}}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;line-height:1.65;font-size:16px}
+img{max-width:100%;height:auto}
+input,select,textarea,button{font-family:inherit;font-size:16px}
+input,select{width:100%;min-height:44px;padding:11px 12px;border:1px solid #cbd5e1;border-radius:8px}
+button,.btn{min-height:44px;padding:12px 22px;border:0;border-radius:8px;font-size:16px;font-weight:700;cursor:pointer;text-decoration:none;display:inline-block;text-align:center}
+.wrap{max-width:1020px;margin:0 auto;padding:0 20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
+.acard{overflow:hidden;border-radius:12px}
+.acard img{width:100%;height:160px;object-fit:cover;display:block}
+.acard div{padding:14px}
+.acard h3{margin:0 0 6px;font-size:16px;line-height:1.35}
+.acard p{margin:0;font-size:14px}
+.toolgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+.toolgrid a{padding:18px;border-radius:12px;text-decoration:none;display:block;font-weight:700}
+.result{padding:16px;border-radius:10px;margin-top:16px}
+.result .big{font-size:clamp(22px,5vw,28px);font-weight:800}
+.tip{padding:14px 16px;border-radius:10px;margin:18px 0}
+.faq h3{font-size:16px;margin:18px 0 4px}
+article img.heroimg{width:100%;max-height:380px;object-fit:cover;border-radius:12px;display:block}
+@media(max-width:640px){
+  .wrap{padding:0 14px}
+  .grid,.toolgrid{grid-template-columns:1fr}
+  .acard img{height:180px}
+  nav a{margin:0 6px}
+}
+@media(max-width:480px){
+  body{font-size:16px}
+  .wrap{padding:0 12px}
+  h1{font-size:26px !important}
+  .btn,button{width:100%}
+  .acard img{height:170px}
+}
+</style></head>
+<body><header><div class="header-in"><a class="logo" href="../index.html">Calorie Calculator</a><nav><a href="../index.html">Home</a><a href="../tools/calorie-calculator.html">Calculator</a><a href="../about.html">About</a><a href="../contact.html">Contact</a></nav></div></header><main class="wrap"><article class="card" style="margin-top:20px"><img class="heroimg" src="../images/activity-multipliers-explained.jpg" alt="Activity Multipliers Explained">
+<h1>Activity Multipliers Explained</h1><p><em>What the 1.2 to 1.9 activity factors mean, how to pick the right one, and the mistakes that inflate your estimate.</em></p>
+<p>Every calorie calculator asks for your activity level and turns it into a multiplier, a number between 1.2 and 1.9 that scales your resting metabolism up to your total daily needs. The multiplier is the single biggest source of error in calorie estimates, because it is a judgement call, and most people judge themselves one level too high. This guide explains what each level really means and how to pick yours honestly.</p>
+<h2>Sedentary: 1.2</h2><p>Sedentary means little or no exercise and a mostly seated day: a desk job, driving or public transport, evenings on the sofa. Daily steps are usually under 5,000. This is the most common level in modern life, and it is nothing to be embarrassed about, but it is important to be honest about it, because choosing a higher level adds hundreds of calories to the result. If you work at a desk and exercise less than once a week, this is your level.</p>
+<h2>Lightly active: 1.375</h2><p>Lightly active means light exercise one to three days a week, or a job that keeps you on your feet some of the time. Think of a few short walks or gentle workouts a week, plus a generally active daily routine. Daily steps are often in the range of 5,000 to 7,500. Many people who exercise two or three times a week and have an otherwise seated day belong here, not at the moderate level. The difference between sedentary and lightly active is about 200 to 300 calories a day for an average adult.</p>
+<h2>Moderately active: 1.55</h2><p>Moderately active means moderate exercise three to five days a week, or a job with regular physical activity. This covers regular gym sessions, running, cycling or team sports several times a week, plus an active daily life. Daily steps are often 7,500 to 10,000. This is the level most regular exercisers should choose. It is also the level where the calculator&#x27;s default sits, which is one reason many people end up with an estimate that is too high.</p>
+<h2>Very active: 1.725, and extra active: 1.9</h2><p>Very active means hard exercise six to seven days a week, or a physical job combined with regular training. Extra active means a physical job and daily hard exercise, or training twice a day. These levels apply to manual workers, athletes in training, and people whose jobs keep them moving all day, such as builders, nurses on ward shifts, or farm workers. Daily steps are usually well above 10,000, often 15,000 or more. Very few people belong here, and choosing these levels without the lifestyle to match inflates the result by 400 to 600 calories a day.</p>
+<h2>How to check your choice</h2><p>Use your step count as a reality check. Check your phone&#x27;s health app for your average daily steps over the last month: under 5,000 is sedentary, 5,000 to 7,500 is lightly active, 7,500 to 10,000 is moderately active, and above 10,000 with regular training is very active. Also ask whether your exercise is really as hard as you think: a gentle walk is light, a brisk walk or easy run is moderate, and only sustained hard training counts as very active. If you are between levels, choose the lower one and adjust later from your results, because underestimating is safer than overestimating when you are trying to lose weight.</p>
+<h2>Checking your level with a step count</h2><p>Use your phone&#x27;s step count to check your activity level honestly. Open the health app and look at the average daily steps over the last month, not just the best day. Under 5,000 steps a day usually means sedentary, even if you train twice a week, because the rest of the day is seated. Between 5,000 and 7,500 is lightly active. Between 7,500 and 10,000 is moderately active. Above 10,000 with regular training is very active, and above 15,000 with a physical job is extra active. If your steps say lightly active but you chose moderately active, change the calculator to the lower level and watch the scales for three weeks. The body&#x27;s response will confirm whether the lower figure was right, and it is better to start low and adjust up than to start high and wonder why nothing changes.</p>
+<div class="tip"><strong>Tip:</strong> Check your phone&#x27;s average daily steps over the last month: under 5,000 is sedentary, 7,500 to 10,000 is moderately active, and above 10,000 with training is very active.</div>
+<h2>Frequently Asked Questions</h2><div class="faq"><h3>What activity multiplier should I choose?</h3><p>Match your whole lifestyle, not just workouts: 1.2 sedentary, 1.375 light, 1.55 moderate, 1.725 very active, 1.9 extra active. When in doubt, choose the lower level.</p><h3>Does walking count as exercise for the multiplier?</h3><p>Yes, it counts towards your overall activity, but gentle walking is light activity. Brisk walking or running counts as moderate.</p><h3>Why does my multiplier matter so much?</h3><p>Each step up the scale adds roughly 150 to 300 calories a day. One level too high can erase a whole weight-loss deficit.</p></div>
+<h2>Related Guides</h2><ul><li><a href="calorie-deficit-mistakes.html">Calorie Deficit Mistakes to Avoid</a></li><li><a href="counting-calories-for-beginners.html">Counting Calories for Beginners</a></li><li><a href="calories-burned-walking.html">Calories Burned Walking</a></li></ul>
+<p><a href="../index.html">&larr; Back to home</a></p></article></main><footer><p>Calorie Calculator — free online calculators and practical guides. <a href="../about.html">About</a> | <a href="../contact.html">Contact</a> | <a href="../privacy.html">Privacy Policy</a> | <a href="../disclaimer.html">Disclaimer</a></p><p>Results are estimates for general information only.</p></footer></body></html>
