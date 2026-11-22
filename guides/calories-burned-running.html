@@ -1,0 +1,78 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calories Burned Running | Calorie Calculator</title>
+<meta name="description" content="How many calories running burns at different paces and weights, and how running fits into a weight-loss plan.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<style>
+body{font-family:Verdana,Geneva,sans-serif;color:#1f2937;background:#f6fbf3}
+a{color:#15803d}header{background:#fff;border-bottom:3px solid #16a34a;padding:14px 0}
+.header-in{max-width:1020px;margin:0 auto;padding:0 20px;display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between}
+.logo{font-size:clamp(22px,5vw,26px);font-weight:800;color:#14532d;text-decoration:none}
+.logo span{color:#16a34a}
+nav a{color:#14532d;margin:0 8px;font-weight:700;font-size:15px;text-decoration:none}
+nav a:hover{color:#16a34a;text-decoration:underline}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:28px;max-width:1020px;margin:0 auto;padding:clamp(24px,5vw,44px) 20px;align-items:center}
+.hero h1{font-size:clamp(26px,5vw,38px);line-height:1.2;margin:0 0 12px;color:#14532d}
+.hero p{font-size:clamp(15px,3vw,17px);color:#4b5563;margin:0 0 16px}
+.calc{background:#fff;max-width:560px;padding:clamp(18px,4vw,26px);border-radius:14px;box-shadow:0 10px 28px rgba(20,83,45,.14);border-top:5px solid #16a34a}
+.calc h2{font-size:20px;margin:0 0 14px;color:#14532d}
+.field{margin-bottom:14px}.field label{display:block;font-size:14px;font-weight:700;margin-bottom:5px;color:#374151}
+.btn{background:#16a34a;color:#fff}.btn:hover{background:#15803d}
+.result{background:#f0fdf4;border:1px solid #86efac}
+.card{background:#fff;border:1px solid #d1fae5;border-radius:12px;padding:22px;margin-bottom:20px}
+.acard{background:#fff;border:1px solid #d1fae5}
+.acard h3 a{color:#14532d;text-decoration:none}.acard p{color:#6b7280}
+.toolgrid a{background:#fff;border:1px solid #d1fae5;color:#14532d}
+.toolgrid a:hover{border-color:#16a34a;background:#f0fdf4}
+.tip{background:#f0fdf4;border-left:4px solid #16a34a}
+h2{color:#14532d}footer{color:#6b7280;font-size:14px;margin-top:30px;padding:20px;text-align:center}
+@media(max-width:640px){.hero{grid-template-columns:1fr}}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;line-height:1.65;font-size:16px}
+img{max-width:100%;height:auto}
+input,select,textarea,button{font-family:inherit;font-size:16px}
+input,select{width:100%;min-height:44px;padding:11px 12px;border:1px solid #cbd5e1;border-radius:8px}
+button,.btn{min-height:44px;padding:12px 22px;border:0;border-radius:8px;font-size:16px;font-weight:700;cursor:pointer;text-decoration:none;display:inline-block;text-align:center}
+.wrap{max-width:1020px;margin:0 auto;padding:0 20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
+.acard{overflow:hidden;border-radius:12px}
+.acard img{width:100%;height:160px;object-fit:cover;display:block}
+.acard div{padding:14px}
+.acard h3{margin:0 0 6px;font-size:16px;line-height:1.35}
+.acard p{margin:0;font-size:14px}
+.toolgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+.toolgrid a{padding:18px;border-radius:12px;text-decoration:none;display:block;font-weight:700}
+.result{padding:16px;border-radius:10px;margin-top:16px}
+.result .big{font-size:clamp(22px,5vw,28px);font-weight:800}
+.tip{padding:14px 16px;border-radius:10px;margin:18px 0}
+.faq h3{font-size:16px;margin:18px 0 4px}
+article img.heroimg{width:100%;max-height:380px;object-fit:cover;border-radius:12px;display:block}
+@media(max-width:640px){
+  .wrap{padding:0 14px}
+  .grid,.toolgrid{grid-template-columns:1fr}
+  .acard img{height:180px}
+  nav a{margin:0 6px}
+}
+@media(max-width:480px){
+  body{font-size:16px}
+  .wrap{padding:0 12px}
+  h1{font-size:26px !important}
+  .btn,button{width:100%}
+  .acard img{height:170px}
+}
+</style></head>
+<body><header><div class="header-in"><a class="logo" href="../index.html">Calorie Calculator</a><nav><a href="../index.html">Home</a><a href="../tools/calorie-calculator.html">Calculator</a><a href="../about.html">About</a><a href="../contact.html">Contact</a></nav></div></header><main class="wrap"><article class="card" style="margin-top:20px"><img class="heroimg" src="../images/calories-burned-running.jpg" alt="Calories Burned Running">
+<h1>Calories Burned Running</h1><p><em>How many calories running burns at different paces and weights, and how running fits into a weight-loss plan.</em></p>
+<p>Running burns more calories per minute than almost any other common exercise, which is why it is a popular choice for weight loss. The burn depends mainly on your weight and how far you run, and surprisingly little on how fast you run. This guide explains the numbers, how pace and distance change them, and how to use running without burning out or getting injured.</p>
+<h2>The simple rule: distance matters more than speed</h2><p>A useful rule is that running burns about 1 calorie per kilogram of body weight per kilometre. A 70 kg person running 5 km burns roughly 350 calories, whether they run it in 25 minutes or 35 minutes, because the energy cost of moving the body over the distance is similar. Running faster burns more per minute, but the run is shorter, so the total is close. This is good news for beginners: you do not need to run fast to burn calories, you need to cover distance, and a slow jog counts almost as much as a fast run over the same route.</p>
+<h2>Worked examples</h2><p>A 60 kg person running 5 km burns about 300 calories. An 80 kg person running the same 5 km burns about 400 calories. A 70 kg person running 10 km burns about 700 calories. These are estimates, because running efficiency varies: experienced runners are slightly more efficient and burn a little less, while beginners burn a little more. Hills, wind and soft surfaces such as sand or trails add to the cost. The standard MET value for moderate running is about 7, and for fast running about 10 or more, which is how our calories burned calculator estimates it.</p>
+<h2>Running and appetite</h2><p>Running has a complicated relationship with appetite. A hard run can suppress hunger for an hour or two, then increase it later in the day, and many runners eat back more than they burned without realising it. A good habit is to eat a normal meal after a run rather than a reward meal, and to drink water first, because thirst is often mistaken for hunger. If you run mainly for weight loss, keep the food target fixed and treat the running as extra deficit, rather than eating back the calories your watch reports.</p>
+<h2>Starting safely</h2><p>If you are new to running, build up gradually: alternate running and walking, add no more than 10 percent to your weekly distance, and rest at least one day between runs at first. Good shoes matter more than fancy kit, and running on soft surfaces is kinder to joints than concrete. Pain that is sharp, one-sided, or that gets worse during a run is a signal to stop and rest, not to push through. Most running injuries come from doing too much too soon, not from running itself.</p>
+<h2>Running as part of a weight plan</h2><p>Three runs a week of 30 minutes each burns roughly 900 to 1,200 calories a week for most adults, or about 0.15 kg of fat. That is a useful contribution, but it is not a substitute for managing food: a single large meal can undo a week of running. The best results come from combining running with a modest calorie deficit and some strength training, which protects muscle while you lose fat. Running also brings benefits beyond calories: better mood, better sleep, and better heart health, which are worth having even on weeks when the scales do not move.</p>
+<h2>A week of running, added up</h2><p>Take a 70 kg person who runs three times a week for 30 minutes, covering about 5 km each time. Each run burns about 350 calories, so the week adds about 1,050 calories, roughly 0.15 kg of fat. Over a month, that is about 0.6 kg, and over six months about 3.5 kg, from running alone. Add a modest food reduction of 200 calories a day, and the month reaches about 1.4 kg of loss. The example shows both the value and the limit of running: it is a useful contribution, but it is not a substitute for managing food, because a single large meal can undo a week of running. The best plan combines the two, and the running also brings fitness, mood and sleep benefits that food alone cannot provide.</p>
+<div class="tip"><strong>Tip:</strong> Running burns about 1 calorie per kilogram of body weight per kilometre — a 70 kg person burns roughly 350 calories running 5 km, at almost any pace.</div>
+<h2>Frequently Asked Questions</h2><div class="faq"><h3>How many calories do I burn running 5 km?</h3><p>About 1 calorie per kilogram per kilometre: roughly 350 calories for a 70 kg person, 300 for 60 kg, 400 for 80 kg.</p><h3>Does running faster burn more calories?</h3><p>Per minute, yes, but per kilometre, barely. A fast 5 km and a slow 5 km burn similar totals, because the distance is the same.</p><h3>Will running alone make me lose weight?</h3><p>It helps, but food matters more. Three 30-minute runs a week burn roughly 900 to 1,200 calories — useful, but one large meal can undo it.</p></div>
+<h2>Related Guides</h2><ul><li><a href="protein-carbs-fat-split.html">Protein, Carbs and Fat: Finding Your Split</a></li><li><a href="calorie-needs-by-age.html">Calorie Needs by Age</a></li><li><a href="calorie-needs-for-men.html">Calorie Needs for Men</a></li></ul>
+<p><a href="../index.html">&larr; Back to home</a></p></article></main><footer><p>Calorie Calculator — free online calculators and practical guides. <a href="../about.html">About</a> | <a href="../contact.html">Contact</a> | <a href="../privacy.html">Privacy Policy</a> | <a href="../disclaimer.html">Disclaimer</a></p><p>Results are estimates for general information only.</p></footer></body></html>
